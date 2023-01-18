@@ -65,12 +65,12 @@ for link in productlinks:
     print("completed",c)
 
 df = pd.DataFrame(data)
-
+print(df)
 # path = os.getcwd()
 # UPLOAD_FOLDER = os.path.join(path, 'upload')
 # df.to_json(UPLOAD_FOLDER+'/data.json', orient='records', lines=True)
 # df.to_csv(UPLOAD_FOLDER+'/data.csv', encoding='utf-8', index=False)
 
 # generate output in json and csv 
-df.to_json('output.json', orient='records', lines=True)
-df.to_csv('output.csv', encoding='utf-8')
+df.to_json('upload/output.json', orient='records', lines=True)
+df.to_csv('upload/output.csv', encoding='utf-8')
